@@ -1,3 +1,4 @@
+
 const menuButton = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".main-nav");
 
@@ -32,7 +33,7 @@ if (comparison) {
 }
 
 const revealItems = document.querySelectorAll(".reveal");
-const observer = new IntersectionObserver(entries => {
+const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add("visible");
